@@ -2,7 +2,7 @@
 
 ## Lo básico
 
-```
+```ruby
 # Esto es un comentario de una línea
 
 =begin
@@ -38,7 +38,7 @@ x /= 2   # x = 2 / 2 = 1
 ```
 
 ### Strings
-```
+```ruby
 s1 = 'Soy un String'
 s2 = "También soy un String"
 
@@ -60,7 +60,7 @@ edad = edad.to_i  # edad se convierte a entero 10
 ```
 
 ## Control de flujo
-```
+```ruby
 # Solo una condición
 if edad == 10
   puts "Tienes 10 años!"
@@ -118,7 +118,7 @@ puts edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad"
 | \|\| | Or lógico |
 | && | And lógico | 
 
-```
+```ruby
 # Comparando dos cosas
 a == b
 
@@ -132,7 +132,7 @@ end
 ```
 
 ## Loops
-```
+```ruby
 # Loop for de 1 a 5
 for i in 1..5
   puts i
@@ -163,7 +163,7 @@ end
 ```
 ## Arreglos, Hashes y Símbolos
 ### Arreglos
-```
+```ruby
 num = [1, 2, 3, 4, 5]
  
 palabras = ["hola", "soy", "un", "array"]
@@ -200,7 +200,7 @@ palabras.each { |palabra| puts palabra }
 ```
 
 ### Hashes
-```
+```ruby
 # Un hash es una colección de pares key-valor
 perfil = {
   "nombre" => "Jon",
@@ -232,7 +232,7 @@ end
 # > Mi telefono es 1234567.
 ```
 ### Hashes y símbolos
-```
+```ruby
 # Los símbolos son nombres inmutables usados principalmente como hash keys. Se pueden definir en hashes de dos formas, usando => o :
 perfil = {
   :nombre => "Jon",
@@ -273,7 +273,7 @@ tiempos.each_value { |v| puts v }
 ```
 
 ## Métodos
-```
+```ruby
 # Un método sin argumento
 def saluda
   puts "¡Hola Mundo!"

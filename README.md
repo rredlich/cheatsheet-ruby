@@ -2,6 +2,7 @@
 
 ## Lo básico
 
+### Variables y operaciones básicas
 ```ruby
 # Esto es un comentario de una línea
 
@@ -300,4 +301,78 @@ lista_de_nombres("Jon", "Arya", "Bran")
 # > Yo soy Jon
 # > Yo soy Arya
 # > Yo soy Bran
+```
+
+## Convenciones para nombrar
+```ruby
+# Usa snake_case y no separes el número de letras para simbolos, métodos y variables
+# Malo
+:someSymbol
+
+someVar = 5
+var_10  = 10
+
+def someMethod
+end
+
+# Bueno
+:some_symbol
+
+some_var = 5
+var10    = 10
+
+def some_method
+end
+
+
+# Usa CamelCase para clases y modulos, manteniendo las mayúsculas de acrónimos como HTTP, XML, etc.
+# Malo
+class Someclass
+end
+
+class Some_Class
+end
+
+class SomeXml
+end
+
+class XmlSomething
+end
+
+# Bueno
+class SomeClass
+end
+
+class SomeXML
+end
+
+class XMLSomething
+end
+
+
+# Usa snake_case para nombrar archivos y directorios
+# hello_world.rb
+# hello_world/hello_world.rb
+
+
+# Usa SCREAMING_SNAKE_CASE para constantes
+# Malo
+SomeConst = 5
+
+# Bueno
+SOME_CONST = 5
+
+# Otras recomendaciones
+# + Las variables son nombradas por el significado de su contenido, no por el tipo de contenido
+# + Las variables no son abreviadas
+# + No pueden empezar con un número
+# Malo
+students_array = [1, 2, 3, 4]
+1st_lesson     = 1
+sts            = 4
+
+# Bueno
+students       = [1, 2, 3, 4]
+first_lesson   = 1
+students       = 4
 ```
